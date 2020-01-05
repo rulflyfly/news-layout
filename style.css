@@ -1,7 +1,14 @@
 @font-face {
     font-family: 'Gilroy';
     src: url(./fonts/Gilroy-FREE/Gilroy-Light.otf);
+    font-weight: lighter;
   }
+
+@font-face {
+font-family: 'Gilroy';
+src: url(./fonts/Gilroy-FREE/Gilroy-ExtraBold.otf);
+font-weight: bold;
+}
 
   * {
       font-family: 'Gilroy';
@@ -82,6 +89,8 @@ nav img {
     height: 13em;
     color: white;
     margin: 1em 0;
+    max-width: 45em;
+    
 }
 .card p:first-of-type {
     margin-top: auto;
@@ -152,62 +161,27 @@ section a:hover {
     text-decoration: none;
 }
 
-.news-text h1 {
-    color: #1b4ea2;
-    width: 70%;
-    margin-bottom: 1em;
+/*   news page   */
+
+.news-header {
+    background-image: url(./images/98bbc5267d285d2047d2419701e5f2fd\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+    color: white;
+    padding: 1em;
 }
 
-.float {
-    display: flex;
-    justify-content: space-between;
-    margin: 2em 0;
+.news-header a {
+    color: white;
 }
 
-
-
-.float img {
-    margin: 1em;
-    margin-top: 0;
-    height: 50%;
-    width: 50%;
+.news-nav {
+    margin-bottom: 0 !important;
 }
 
-.more-news {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
-}
-
-.card-form {
-    background: #eee;
-    color: black;
-    padding-top: .3em;
-}
-
-.card-form p {
-    color: grey;
-    font-size: .8em;
-}
-
-.card-form input {
-    display: block;
-    width: 100%;
-    margin: .5em 0;
-    border-radius: .3em;
-    border: 1px solid #ccc;
-    padding: .5em;
-}
-
-.card-form .btn {
-    margin: 0;
-    padding: 0 1em;
-    margin-left: auto;
-    font-size: .9em;
-}
-
-.larger-p {
-    font-size: 1.3em;
+.news-text {
+    margin-top: 2em;
 }
 
 .news-text p span {
@@ -215,15 +189,17 @@ section a:hover {
     margin-left: .5em;
 }
 
-.mg-t {
-    margin-top: 3em;
+.span-mg-top {
+    margin-top: 1em;
 }
 
-.bg-form {
-    background: #eee;
+.float img {
+    display: none;
 }
 
-
+.card-form {
+    display: none;
+}
 
 @media (min-width: 768px) {
 
@@ -273,6 +249,41 @@ section a:hover {
         grid-template-columns: 1fr 1fr;
         grid-gap: 2em;
     }
+
+    /* news page */
+
+    .news-header {
+        background: none;
+        box-shadow: none;
+        color: black;
+    }
+ 
+    .news-header a {
+        color: black;
+    }
+ 
+     .news-header h1 {
+         color: #1b4ea2;
+         width: 70%;
+         margin-bottom: 1em;
+         font-weight: bold;
+     }
+     
+     .float {
+         display: flex;
+         flex-direction: column;
+         margin: 2em 0;
+     }
+     
+     
+     
+     .float img {
+         display: inline-block;
+         width: 100%;
+         height: 100%;
+         max-width: 45em;
+     }
+    
 }
 
 @media (min-width: 1025px) {
@@ -333,4 +344,82 @@ section a:hover {
         align-self: center;
         margin-top: 2.4em;
     }
+
+   /*   news page   */
+
+    .news-header {
+        padding-bottom: 0;
+    }
+    
+    .more-news {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+    }
+    
+    .card-form {
+        display: block;
+        background: #eee;
+        color: black;
+        padding-top: .3em;
+    }
+    
+    .card-form p {
+        color: grey;
+        font-size: .8em;
+    }
+    
+    .card-form input {
+        display: block;
+        width: 100%;
+        margin: .5em 0;
+        border-radius: .3em;
+        border: 1px solid #ccc;
+        padding: .5em;
+    }
+    
+    .card-form .btn {
+        margin: 0;
+        padding: 0 1em;
+        margin-left: auto;
+        font-size: .9em;
+    }
+    
+    .larger-p {
+        font-size: 1.3em;
+    }
+    
+    .float {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .float img {
+        margin: 1em;
+        margin-top: 0;
+        height: 50%;
+        width: 50%;
+    }
+    
+    .mg-t {
+        margin-top: 3em;
+    }
+    
+    .bg-form {
+        background: #eee;
+    }
+    
+    .lg-hide {
+        display: none;
+    }
+
+    #lg-hide {
+        display: none !important;
+    }
+
+    .card-form h5 {
+        font-size: 1.1em;
+    }
+
 }
+

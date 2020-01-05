@@ -9,25 +9,42 @@
     <title>News</title>
 </head>
 <body>
-    <header class="navbar navbar-inverse navbar-static-top">
+    <header class="navbar navbar-inverse navbar-static-top news-nav">
             <nav class='container'>
                 <img src="./images/f9e80cc7c8327659956826c533b00fab.png" alt="logo">
+                <button class='navbar-toggle lg-hide' data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <div class='collapse navbar-collapse navHeaderCollapse' id="lg-hide">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Решения</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li class="search"></li>
+                    </ul>
+                </div>
             </nav>
     </header>
     <main>
-        <div class="nav-links container">
+        <div class='container news-header'>
+        <div class="nav-links">
             <a href="">О компаниии / </a>
             <a href="">Новости /</a>
         </div>
-        <section class='container news-text'>
             <h1>Петербургский водоканал перешёл на поддержку в RKIT</h1>
             <p><strong>11.11.2019</strong></p>
+        </div>
+        <section class='container news-text'>
             <p class='larger-p'>RKIT c октября 2019 года обеспечивает техническую поддержку системы электронного документооборота ГУП «Водоканал Санкт-Петербурга».</p>
             <div class="float">
                 <p>Собственником имущества ГУП «Водоканал Санкт-Петербурга» является город Санкт-Петербург в лице уполномоченных государственных органов. Предприятие обеспечивает услугами водоснабжения и канализования жителей Петербурга — 5,3 миллиона человек, а также десятки тысяч предприятий и организаций города. В ведении петербургского Водоканала находятся также городские 
                 фонтаны, общественные туалеты, а также стационарные 
                 снегоплавильные пункты.
-                    <span>В систему водоснабжения  Санкт-Петербурга входят:</span>
+                    <span class='span-mg-top'>В систему водоснабжения  Санкт-Петербурга входят:</span>
                     
                     <span>· 7 414 км водопроводных сетей;</span>
                     
@@ -45,11 +62,11 @@
                 
                 <span>·«Архивное делопроизводство»: структурированное хранение электронных копий документов, формирование и ведение номенклатуры дел предприятия и его структурных подразделений, списание документов, передача дел между структурными подразделениями предприятия и в архив организации, фиксация фактов уничтожения и утраты документов, поиск, формирование отчётов и печатных форм.</span>
                 
-                <span>Техподдержка RKIT обеспечивает стабильную и бесперебойную работу системы электронного документооборота. В ведение RKIT также входит обновление, модернизация и корректировка текущих настроек системы по запросам ГУП «Водоканал Санкт-Петербурга».</span>
+                <span class='span-mg-top'>Техподдержка RKIT обеспечивает стабильную и бесперебойную работу системы электронного документооборота. В ведение RKIT также входит обновление, модернизация и корректировка текущих настроек системы по запросам ГУП «Водоканал Санкт-Петербурга».</span>
             </p>
        </section >
        <section class='container mg-t'>
-           <h5>Смотрите также:</h4>
+           <h5><strong>Смотрите также:</strong></h5>
            <div class='more-news'>
                 <div class="card shadow card-img-3">
                     <h4>RKIT победил во всероссийском конкурсе «Лучший ИТ-проект для нефтегазовой отрасли»!</h3>
@@ -61,8 +78,13 @@
                     <p>19 июня мы провели вебинар на тему управления проектами на Docsvision.</p>
                     <p>24.06.2019</p>
                 </div>
+                <div class="card lg-hide">
+                    <h4>RKIT и «Алладин Р.Д.» - партнеры</h4>
+                    <p>Компания заключила партнёрское соглашение c одним из крупнейших разработчиков средств информационной безопасности для бизнеса.</p>
+                    <p>10.09.2019</p>
+                </div>
                 <div class="card card-form">
-                    <h5>Подпишитесь на нашу рассылку, чтобы быть в курсе новостей</h3>
+                    <h5><strong>Подпишитесь на нашу рассылку, чтобы быть в курсе новостей</strong></h3>
                     <form action="" method=''>
                         <input type="text" placeholder="E-mail:">
                         <p>Нажимая на кнопку «Подписаться», вы даёте согласие на обработку своих персональных данных.</p>
@@ -72,5 +94,7 @@
             </div>
        </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
